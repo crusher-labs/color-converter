@@ -26,4 +26,4 @@ A simple web utility to convert color codes between HEX, RGB, and HSL formats wi
 ## **Live Tool**
 
 You can access the live tool here:
-👉 [**Color Converter**](https://itxcrusher.github.io/color-converter/)
+👉 [**Color Converter**](https://crusher-labs.github.io/color-converter/)
