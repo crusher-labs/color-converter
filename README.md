@@ -1,29 +1,25 @@
-# **Color Converter**
+# Color Converter
 
-A simple web utility to convert color codes between HEX, RGB, and HSL formats with a real-time color preview.
+Convert colors between HEX, RGB, HSL, HSV and CMYK on the 24-patch Macbeth color rendition chart (the published sRGB values of the classic chart, clickable as a reference palette) with a loupe holding the color being edited, a lab sheet of every notation with per-format copy, a native picker, the nearest CSS named color, WCAG contrast on white and black with grades, and which text color reads on it. Nothing uploaded.
 
----
+Live: <https://crusher-labs.github.io/color-converter/>
 
-## **Features**
+## The world: Color checker card
 
-* **Real-Time Conversion:** Instantly see color values update across all formats as you type.
-* **Live Color Preview:** A large swatch shows you the exact color you're working with.
-* **Copy to Clipboard:** Easily copy the HEX code with a single click.
-* **Bi-directional:** Change any value (e.g., Hue, Saturation, or the Red channel) and see all other values update accordingly.
-* **Responsive Design:** A clean, focused interface that works on any device.
+This tool is a **world page** (crusher-labs standard since 2026-09-02): the page is a committed physical object from the tool's own world, with its own CSS, fonts and mode. It does not load `crusher-ui-kit` and has no theme switcher. The brief for this world lives in the workspace atlas (`x:/crusher-labs/docs/context/tools-theme-atlas.md`); change the atlas before changing the world.
 
----
+## Privacy
 
-## **How to Use**
+This tool runs entirely in your browser. There is no server. No data is uploaded, no telemetry, no analytics. The only network requests fired are the page-load fetches for Google Fonts; your inputs and outputs never leave the tab. The "Suggest an improvement" form posts to Web3Forms only when you submit it.
 
-1. **Open the Tool:** Navigate to the live URL.
-2. **Enter a Color:** Type a value into any of the HEX, RGB, or HSL input fields.
-3. **See the Conversion:** All other fields will update instantly. The color preview will also change.
-4. **Copy the HEX Code:** Click the copy icon next to the HEX input field to copy it to your clipboard.
+## Contract
 
----
+Validated by `tools-hub/scripts/check-static.mjs` (world-page contract: SEO block, CSP, feedback form, hub link, prose + FAQ, no kit pins). Run `npm run check:static` from `repos/tools-hub` before committing.
 
-## **Live Tool**
+## Development
 
-You can access the live tool here:
-👉 [**Color Converter**](https://crusher-labs.github.io/color-converter/)
+Open `index.html` directly in a browser. No build, no dependencies. Verify at 1440 and 390 via Playwright `setViewportSize` before shipping.
+
+## License
+
+MIT.
